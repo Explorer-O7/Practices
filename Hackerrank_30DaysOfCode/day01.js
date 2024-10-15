@@ -6,6 +6,22 @@
  ii. Print the sum of  plus your double variable to a scale of one decimal place on a new line.
  iii. Concatenate  with the string you read as input and print the result on a new line. */
 
+process.stdin.resume();
+process.stdin.setEncoding('ascii');
+
+var input_stdin = "";
+var input_stdin_array = "";
+var input_currentline = 0;
+
+process.stdin.on('data', function (data) {
+    input_stdin += data;
+});
+
+process.stdin.on('end', function () {
+    input_stdin_array = input_stdin.split("\n");
+    main();    
+});
+
 function readLine() {
     return input_stdin_array[input_currentline++];
 }
