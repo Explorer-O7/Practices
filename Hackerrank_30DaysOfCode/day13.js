@@ -1,4 +1,5 @@
-/* Task: Given a Book class and a Solution class, write a MyBook class that does the following:
+/* -- Abstract Classes --
+Task: Given a Book class and a Solution class, write a MyBook class that does the following:
  * Inherits from Book
  * Has a parameterized constructor taking these 3 parameters:
   1. string title
