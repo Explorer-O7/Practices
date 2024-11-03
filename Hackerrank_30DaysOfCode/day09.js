@@ -1,4 +1,5 @@
-/* Task: Write a function which calculates and returns the factorial of a given number using recursion */
+/* -- Recursion 3 --
+Task: Write a function which calculates and returns the factorial of a given number using recursion */
 
 function factorial(n) {
     if(n <= 1) return 1;
