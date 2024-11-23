@@ -7,12 +7,12 @@ Given the head of a linked list, the task is to find the middle. For example, th
   Output: 7
   Explanation: The given linked list is 2->4->6->7->5->1 and its middle is 7. */
 
-int getMiddle(Node head) {
-    Node slow = head;
-    Node fast = head;
-    while(fast!=null && fast.next!=null) {
-        slow = slow.next;
-        fast = fast.next.next;
+int getMiddle(Node* head) {
+    Node* slow = head;
+    Node* fast = head;
+    while(fast!=NULL && fast->next!=NULL) {
+        slow = slow->next;
+        fast = fast->next->next;
     }
-    return slow.data;
+    return slow->data;
 }
